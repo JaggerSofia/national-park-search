@@ -5,8 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Find National Parks</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <div class='container'>
+        <h1>Search for National Parks</h1>
+        <form id=national>
+            <label for="search-park">State:</label>
+            <input type="text" name="search-park" id="search-park">
+            <label for="max-result">Number of Parks to Return:</label>
+            <input type="number" name='results-num' id='results-num'>
+            <input type="submit" value='Search'>
+        </form>
+        <p id='js-error-message'></p>
+        <section id='results' class='hidden'>
+            <h2>National Parks</h2>
+            <ul id='results-list'>
+
+            </ul>
+        </section>
+    </div>  
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='script.js'></script>
 </body>
 </html>
