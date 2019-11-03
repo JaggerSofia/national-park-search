@@ -1,11 +1,11 @@
 'use strict'
 const apiUrl='https://developer.nps.gov/api/v1/parks?parkCode=acad'
-const apiKey='XvV7YH8CQvUmv8YNW5501fw3Gi4SDPPAcZoYubix'
+
 
 
 function findPark(searchPark, maxResults = 10) {
     const params = {
-        api_key: apiKey,
+        stateCode: searchPark,
         q: searchPark,
         limit: maxResults,
     };
