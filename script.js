@@ -27,7 +27,7 @@ function findPark(searchPark, maxResults = 10) {
         //     "cache-control": "no-cache"
         //   }
         headers: new Headers({
-            "Authorization": 'XvV7YH8CQvUmv8YNW5501fw3Gi4SDPPAcZoYubix'})
+            'X-API-Key' : 'XvV7YH8CQvUmv8YNW5501fw3Gi4SDPPAcZoYubix'})
     };
 
     fetch(url, options)
