@@ -1,5 +1,5 @@
 'use strict'
-const apiUrl='http://developer.nps.gov/api/v1/parks?parkCode=acad'
+const apiUrl='https://developer.nps.gov/api/v1/parks?parkCode=acad'
 
 function findPark(searchPark, maxResults = 10) {
     const params = {
