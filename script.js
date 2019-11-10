@@ -29,8 +29,9 @@ function findPark(searchPark, maxResults= 10) {
 }
 
 function displayResult(responseJson) {
-    console.log(responseJson)
-    for(let i=0; i<responseJson.length; i++) {
+    $('#results-list').empty();
+    console.log(responseJson.map)
+    for(let i=0; i<responseJson.length; ++i) {
         $('#results-list').append(
             `<li>
                 <h3>${responseJson[i].fullName}</h3>
