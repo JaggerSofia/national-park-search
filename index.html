@@ -14,15 +14,15 @@
             <label for="search-park" >State:</label>
             <input type="text" name="search-park" placeholder='e.g. WA' id="search-park">
             <label for="max-result">Number of Parks to Return:</label>
-            <input type="number" name='results-num' id='results-num'>
+            <input type="number" name='results-num' min='10' max='100' placeholder='10' id='results-num'>
             <input type="submit" value='Search'>
         </form>
         <p id='js-error-message'></p>
         <section id='results' class='hidden'>
             <h2>National Parks</h2>
-            <ul id='results-list'>
+            <ol id='results-list'>
 
-            </ul>
+            </ol>
         </section>
     </div>  
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
