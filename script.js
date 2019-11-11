@@ -24,7 +24,7 @@ function findPark(searchPark, maxResults= 10) {
         })
         .then(responseJson => displayResult(responseJson.data))
             .catch(err => {
-                $('#js-error-message').text(`Something went wrong: ${err.message}`);
+                $('#js-error-message').text(`No parks were found: ${err.message}`);
             })
 }
 
@@ -48,10 +48,10 @@ function watchForm() {
         event.preventDefault();
         let searchPark = $('#search-park').val();
         let maxResults = $('#results-num').val();
-        if (searchPark !== '') {
+        if (searchPark !== '' && maxResults >= 10) {
             findPark(searchPark, maxResults);
         } else {
-            alert('Please enter a search term and results');
+            alert('Please enter a search term and results must be more than 10');
         }
     })
 }
